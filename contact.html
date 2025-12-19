@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SVALLY — Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      line-height: 1.7;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.95);
+      border-bottom: 1px solid #1a1a1a;
+      z-index: 1000;
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: auto;
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 800;
+    }
+
+    .logo span {
+      color: #ff0000;
+    }
+
+    nav a {
+      margin-left: 2rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #ff0000;
+    }
+
+    main {
+      padding-top: 120px;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 6rem 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      color: #b0b0b0;
+      max-width: 900px;
+      margin-bottom: 1.5rem;
+    }
+
+    form {
+      margin-top: 3rem;
+      max-width: 700px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    input, textarea {
+      width: 100%;
+      background: #0a0a0a;
+      border: 1px solid #1a1a1a;
+      color: #fff;
+      padding: 0.9rem;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #ff0000;
+    }
+
+    button {
+      background: none;
+      border: 2px solid #ff0000;
+      color: #ff0000;
+      padding: 0.9rem 1.8rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ff0000;
+      color: #000;
+    }
+
+    .note {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    footer {
+      border-top: 1px solid #1a1a1a;
+      padding: 4rem 2rem;
+      text-align: center;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">SV<span>ALLY</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="process.html">Process</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section>
+  <h1>Contact</h1>
+  <p>
+    SVALLY works with a limited number of partners at a time.
+    This form exists to evaluate alignment before any engagement.
+  </p>
+
+  <p>
+    Incomplete or unclear submissions are not reviewed.
+  </p>
+
+  <form>
+    <label for="name">Full Name</label>
+    <input type="text" id="name" placeholder="Your name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" placeholder="you@email.com" required>
+
+    <label for="company">Company / Project</label>
+    <input type="text" id="company" placeholder="Brand, business or idea">
+
+    <label for="message">Brief Description</label>
+    <textarea id="message" placeholder="What are you trying to build? Why SVALLY?"></textarea>
+
+    <button type="submit">Submit Request</button>
+
+    <p class="note">
+      Responses are typically sent within 48–72 hours.
+      Not all requests receive a reply.
+    </p>
+  </form>
+</section>
+
+</main>
+
+<footer>
+  <p>© SVALLY — Contact</p>
+</footer>
+
+</body>
+</html>
